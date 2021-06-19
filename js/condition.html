@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script>
+        var num = 3;
+        if (num % 2 == 0) {
+            console.log('짝수');
+        } else {
+            console.log('홀수');
+        }
+
+        var max = num / 2;
+        var i = 2;
+        for (; i <= max / 2; i++) {
+            if (num % i == 0) {
+                break;
+            }
+        }
+        if (i == max) {
+            console.log('소수입니다');
+        } else {
+            console.log('소수가 아닙니다');
+        }
+
+        //*********************************//
+        //1-가위, 2-바위, 3-보
+        var arr = ['가위', '바위', '보'];
+        var userNum = 2; // 사용자 가위
+        var r = parseInt(Math.random() * 3 + 1); // 1.0<= r <4.0
+
+        console.log('사용자값: ' + arr[userNum - 1] + ', 컴퓨터값: ' + arr[r - 1]);
+
+
+        if (userNum == r) {
+            console.log('비김');
+        } else if (userNum - 1 == r % 3) {
+            console.log('이김');
+        } else {
+            console.log('짐');
+        }
+
+        //*******************************//
+
+        var subject = 'JAVA';
+        switch (subject) {
+            case 'JAVA':
+                console.log('개발직군');
+            case 'BPM':
+                console.log('컨설팅직군');
+                break;
+            default: d
+
+        }
+
+    </script>
+</head>
+
+</html>

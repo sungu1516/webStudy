@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>구조화용 태그</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-size: 100%;
+        }
+
+        header {
+            color: blue;
+            background-color: yellow;
+            height: 100px;
+            font-size: 30px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-weight: bold;
+            text-align: center;
+            line-height: 100px;
+            margin: 0px auto;
+
+        }
+
+        header>a.logo {
+            background-image: url(./images/img.jpg);
+            height: 75px;
+            width: 75px;
+            margin: 25px 0px;
+            display: block;
+            float: left;
+        }
+
+        article {
+            background-image: url('https://www.starbucks.co.kr/common/img/main/store_exp_img03.png');
+        }
+
+        nav>ol>li>a {
+            color: hotpink;
+            text-decoration: none;
+        }
+
+        nav>ol {
+            list-style-type: none;
+            padding-left: 0px;
+
+        }
+
+        nav>ol>li {
+            float: left;
+            margin: 10px 30px;
+        }
+
+        body>footer {
+            position: relative;
+            top: 200px;
+            background: burlywood;
+            border-style: solid;
+            height: 50px;
+        }
+
+        section {
+            clear: both;
+            border: 1px;
+            width: 75%;
+            float: left;
+            border-style: solid;
+        }
+
+        section>article.first {
+            border-style: solid;
+        }
+
+        section>article.second {
+            border-style: solid;
+        }
+
+        section>aside {
+            border-style: solid;
+        }
+    </style>
+</head>
+
+<body>
+    <header>KOSTABUCKS</header>
+    <a class="logo" href="#"></a>
+    <nav>
+        <ol>
+            <li><a href="#">메뉴1</a></li>
+            <li><a href="#">메뉴2</a></li>
+            <li><a href="#">메뉴3</a></li>
+        </ol>
+
+
+    </nav>
+    <section>
+        <article class="first">
+            “스타벅스 로스트 스팩트럼은 다년 간의 연구와 장인정신으로 탄생했습니다.”
+            모든 원두는 온도와 시간이 균형을 이루어야 그 향과 청량감, 바디와 풍미가 최고 수준에 이릅니다.
+            우리의 커피는 세 가지 로스팅으로 분류됩니다. - 블론드 로스트, 미디엄 로스트, 다크 로스트.
+            그래서 당신에게 맞는 풍미와 강도를 쉽게 찾을 수 있습니다.
+        </article>
+        <article class="second">
+            라이트 로스트로 완성된 커피
+            스타벅스 블론드 로스트 커피는 부드럽게
+            우리의 감각을 깨웁니다.
+            향긋한 청량감으로 은은하고 부드러우며, 살짝 달콤한 풍미가
+            느껴지는 친근하고 맛 좋은 커피입니다.
+        </article>
+        <aside>KOSTABUCKS 현대카드</aside>
+    </section>
+
+    <footer>이 곳은 스타벅스 페이지의 하단부입니다. </footer>
+</body>
+
+</html>
